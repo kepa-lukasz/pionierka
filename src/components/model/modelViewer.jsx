@@ -18,7 +18,7 @@ function Loader() {
 
 export default function ModelViewer({ model }) {
   return (
-    <div style={{ width: '100%', height: '50vh' }}>
+    <div style={{ width: '100%', height: '100vh' }}>
       <Canvas camera={{ position: model.position, fov: 45 }}>
         <ambientLight intensity={0.5} />
         <directionalLight position={[1,1,1]} />

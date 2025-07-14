@@ -1,16 +1,38 @@
 [
     {
-        "name" : "Prycz składana",
-        "source" : "/models/prycz_skladana/prycz_skladana_z_polka.glb",
-        "position" : [0, 3, 550],
+        "name" : "1Prycz składana",
+        "source" : "/models/prycz_skladana/prycz_skladana.jpg",
         "desc" : "super składana prycz, że hej",
-        "stars" : 4
+        "difficulty" : 3,
+        "materialRating" : 3,
+        "beuty" : 1,
+        "utility" : 1
     },
     {
-        "name" : "Prycz zwykła",
-        "source" : "/models/prycz_zwykla/prycz_zwykla.glb",
-        "position" : [0, 3, 550],
+        "name" : "2Prycz zwykła",
+        "source" : "/models/prycz_zwykla/prycz_zwykla.jpg",
         "desc" : "super składana prycz, że hej",
-        "stars" : 4
+        "difficulty" : 2,
+        "beuty" : 2,
+        "materialRating" : 2,
+        "utility" : 2
+    },
+    {
+        "name" : "1Prycz składana",
+        "source" : "/models/prycz_skladana/prycz_skladana.jpg",
+        "desc" : "super składana prycz, że hej",
+        "difficulty" : 1,
+        "materialRating" : 2,
+        "beuty" : 3,
+        "utility" : 2
+    },
+    {
+        "name" : "2Prycz zwykła",
+        "source" : "/models/prycz_zwykla/prycz_zwykla.jpg",
+        "desc" : "super składana prycz, że hej",
+        "difficulty" : 1,
+        "beuty" : 2,
+        "materialRating" : 1,
+        "utility": 1
     }
 ]
