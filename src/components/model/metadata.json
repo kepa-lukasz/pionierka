@@ -1,0 +1,16 @@
+[
+    {
+        "name" : "Prycz składana",
+        "source" : "/models/prycz_skladana/prycz_skladana_z_polka.glb",
+        "position" : [0, 3, 550],
+        "desc" : "super składana prycz, że hej",
+        "stars" : 4
+    },
+    {
+        "name" : "Prycz zwykła",
+        "source" : "/models/prycz_zwykla/prycz_zwykla.glb",
+        "position" : [0, 3, 550],
+        "desc" : "super składana prycz, że hej",
+        "stars" : 4
+    }
+]
