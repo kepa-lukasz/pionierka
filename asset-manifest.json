@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pionierka/static/css/main.6c2636a0.css",
-    "main.js": "/pionierka/static/js/main.07c44558.js",
+    "main.js": "/pionierka/static/js/main.f2a3ee88.js",
     "index.html": "/pionierka/index.html",
     "main.6c2636a0.css.map": "/pionierka/static/css/main.6c2636a0.css.map",
-    "main.07c44558.js.map": "/pionierka/static/js/main.07c44558.js.map"
+    "main.f2a3ee88.js.map": "/pionierka/static/js/main.f2a3ee88.js.map"
   },
   "entrypoints": [
     "static/css/main.6c2636a0.css",
-    "static/js/main.07c44558.js"
+    "static/js/main.f2a3ee88.js"
   ]
 }
