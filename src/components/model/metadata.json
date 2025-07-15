@@ -1,38 +1,38 @@
 [
     {
-        "name" : "1Prycz składana",
-        "source" : "/models/prycz_skladana/prycz_skladana.jpg",
+        "idx" : 0,
+        "name" : "Prycz składana z półką",
+        "source" : "/models/prycz_skladana",
         "desc" : "super składana prycz, że hej",
         "difficulty" : 3,
         "materialRating" : 3,
-        "beuty" : 1,
-        "utility" : 1
+        "beauty" : 3,
+        "utility" : 3,
+        "advantages" : ["półka w pryczy", "coś innego niż wszystkie"],
+        "disadvantages" : ["półka jest nisko", "możliwe wywalenie wszystkiego na ziemię"],
+        "position" : [300, 150, 500],
+        "creator" : "Łukasz Kępa",
+        "usedMaterials" : 16.4,
+        "neededMaterials" : [
+            ["90cm", 4], ["2m", 4], ["120cm", 4]
+        ]
     },
     {
-        "name" : "2Prycz zwykła",
-        "source" : "/models/prycz_zwykla/prycz_zwykla.jpg",
-        "desc" : "super składana prycz, że hej",
-        "difficulty" : 2,
-        "beuty" : 2,
-        "materialRating" : 2,
-        "utility" : 2
-    },
-    {
-        "name" : "1Prycz składana",
-        "source" : "/models/prycz_skladana/prycz_skladana.jpg",
-        "desc" : "super składana prycz, że hej",
+        "idx" : 1,
+        "name" : "Prycz zwykła",
+        "source" : "/models/prycz_zwykla",
+        "desc" : "Prycza harcerska to podstawowe, terenowe łóżko wykonane z drewna i linek, powszechnie używane na obozach pod namiotami. Skonstruowana jest z kilku belek drewnianych oraz naciągów z linki, które stabilizują całość i zapewniają odpowiednie naprężenie leżyska.🔧 Budowa: Konstrukcja nośna składa się z dwóch dłuższych belek bocznych (np. sosnowych kantówek) i dwóch krótszych belek poprzecznych (głowy i nóg), które tworzą prostokątną ramę łóżka. Na ramie opiera się płyta, siatka z linek lub materac — w zależności od wariantu. W narożach oraz w połowie długości konstrukcji montowane są linki naciągające – przechodzą one na zewnątrz belek bocznych i są mocowane z zewnętrznej strony, aby podczas napinania ściągały belki do środka. Linki często wiązane są na tzw. węzły szkutnicze (np. napinające, ósemki), co ułatwia kontrolę naprężenia i demontaż. 🪢 Detale techniczne: Wbijanie linki od zewnątrz (np. przez otwory lub na kołki) zapobiega rozsuwaniu się boków. To ważne, ponieważ w trakcie użytkowania leżysko naciska na belki na zewnątrz, więc linki muszą działać przeciwnie – ściągając konstrukcję do środka. Brak gwoździ czy śrub w leżysku zapewnia bezpieczeństwo i mobilność konstrukcji – można ją łatwo rozłożyć i przetransportować. 🏕️ Zastosowanie: To rozwiązanie jest proste, tanie i sprawdzone – idealne na obozy, biwaki i pionierkę. Prycza może być też dostosowana do pełnienia funkcji ławy lub stołu po zdjęciu materaca.",
         "difficulty" : 1,
-        "materialRating" : 2,
-        "beuty" : 3,
-        "utility" : 2
-    },
-    {
-        "name" : "2Prycz zwykła",
-        "source" : "/models/prycz_zwykla/prycz_zwykla.jpg",
-        "desc" : "super składana prycz, że hej",
-        "difficulty" : 1,
-        "beuty" : 2,
+        "beauty" : 2,
         "materialRating" : 1,
-        "utility": 1
+        "utility" : 2,
+        "advantages" : ["prosta i klasyczna", "każdy zna i może pomóc"],
+        "disadvantages" : ["brak efektu WOW"],
+        "position" : [300, 200, 400],
+        "creator" : "z dziada pradziada",
+        "usedMaterials" : 9,
+        "neededMaterials" : [
+            ["90cm", 2], ["200cm", 2], ["80cm", 4]
+        ]
     }
 ]

@@ -83,11 +83,14 @@
 
 .form-range{
     position: absolute;
-    top: 0%;
+    top: 50%;
     right: -10px;
-    width: 72% !important;
+    width: 104% !important;
     opacity: 0;
 }
 .form-range::-webkit-slider-runnable-track{
   height: 100% !important;
+}
+a{
+  text-decoration: none !important;
 }

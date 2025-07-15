@@ -1,31 +1,29 @@
-import GoalSlider from './components/table/filters/progressbar'
-import ModelSelector from './components/table/modelSelector'
+import React from 'react';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+// import RootLayout from './layout/RootLayout';
+import HomePage from './components/pages/home/home';
+import DetailsPage from './components/pages/details/details';
 
-function App() {
-  return (
-    <div>
-      <h1>Super aplikacja</h1>
-      <div className='filters d-flex mx-3 flex-wrap'>
-        <div className='p-2 col-10 col-sm-6 col-lg-3'>
-          <h4>Trudność</h4>
-          <GoalSlider />
-        </div>
-        <div className='p-2 col-10 col-sm-6 col-lg-3'>
-          <h4>Zużycie </h4>
-          <GoalSlider />
-        </div>
-        <div className='p-2 col-10 col-sm-6 col-lg-3'>
-          <h4>Estetyka</h4>
-          <GoalSlider reverse={true}/>
-        </div>
-        <div className='p-2 col-10 col-sm-6 col-lg-3'>
-          <h4>Użyteczność</h4>
-          <GoalSlider reverse={true} />
-        </div>
-      </div>
-      <ModelSelector />
-    </div>
-  )
-}
+const router = createHashRouter([
+  {
+    path: '/',
+    // element: <RootLayout />,
+    children: [
+      {
+        index: true, // odpowiada za "/"
+        element: <HomePage />,
+      },
+      {
+        path: 'szczegoly/:id',
+        element: <DetailsPage />,
+      }
+    ],
+  },
+]);
 
-export default App
+const App = () => {
+  return <RouterProvider router={router} />;
+ 
+};
+
+export default App;

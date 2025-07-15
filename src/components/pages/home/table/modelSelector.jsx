@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ReactPaginate from 'react-paginate'
-import models from '../model/metadata.json'
-import ModelViewer from '../model/modelViewer'
+import models from '../../../model/metadata.json'
+import ModelViewer from '../../details/modelViewer'
 import './model.css' // opcjonalne, dla stylu paginacji
 import ModelCard from './modelCard'
 

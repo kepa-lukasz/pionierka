@@ -1,37 +1,68 @@
 import React, { useState } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import { FaSmile, FaMeh, FaFrown } from 'react-icons/fa';
+import { FaFaceDizzy } from "react-icons/fa6";
+
 
 const getStatus = (value, reverse) => {
-    const direct = [
+    const base = [
         {
-            label: 'ahead of pace',
-            schedule: 'ahead of schedule',
-            percent: 33,
-            variant: 'success',
-            icon: <FaSmile className="text-success" size={16} />,
+            label: 'Dowolne',
+            percent: 0,
+            variant: 'secondary',
+            icon: <FaFaceDizzy className="text-secondary" size={16} />,
         },
         {
-            label: 'on pace',
-            schedule: 'on schedule',
+            label: 'Nisko',
+            percent: 33,
+            variant: 'danger',
+            icon: <FaFrown className="text-danger" size={16} />,
+        },
+        {
+            label: 'Średnio',
             percent: 67,
             variant: 'warning',
             icon: <FaMeh className="text-warning" size={16} />,
         },
         {
-            label: 'behind pace',
-            schedule: 'behind schedule',
+            label: 'Wysoko',
+            percent: 100,
+            variant: 'success',
+            icon: <FaSmile className="text-success" size={16} />,
+        },
+    ];
+
+    const reversed = [
+        {
+            label: 'Dowolne',
+            percent: 0,
+            variant: 'secondary',
+            icon: <FaFaceDizzy className="text-secondary" size={16} />,
+        },
+        {
+            label: 'Nisko',
+            percent: 33,
+            variant: 'success',
+            icon: <FaSmile className="text-success" size={16} />,
+        },
+        {
+            label: 'Średnio',
+            percent: 67,
+            variant: 'warning',
+            icon: <FaMeh className="text-warning" size={16} />,
+        },
+        {
+            label: 'Wysoko',
             percent: 100,
             variant: 'danger',
             icon: <FaFrown className="text-danger" size={16} />,
         },
     ];
 
-    const reversed = [...direct].reverse();
-    return reverse ? reversed[value - 1] : direct[value - 1];
+    return reverse ? reversed[value] : base[value];
 };
 
-const GoalSlider = ({ initialValue = 2, reverse = false, onChange }) => {
+const GoalSlider = ({ label, initialValue = 0, reverse = false, onChange }) => {
     const [value, setValue] = useState(initialValue);
     const status = getStatus(value, reverse);
 
@@ -42,14 +73,13 @@ const GoalSlider = ({ initialValue = 2, reverse = false, onChange }) => {
     };
 
     return (
-        <div  style={{ position: "relative" , maxWidth: '500px' }}>
-
-            {/* Progress bar */}
+        <div className='mx-2' style={{ position: 'relative', maxWidth: '500px' }}>
+            <h4>{label}: {status.label}</h4>
             <div className="position-relative mb-3" style={{ height: '20px' }}>
                 <ProgressBar
                     now={status.percent}
                     variant={status.variant}
-                    striped
+                    striped={status.percent > 0}
                     style={{ height: '100%', borderRadius: '10px' }}
                 />
                 <div
@@ -72,20 +102,16 @@ const GoalSlider = ({ initialValue = 2, reverse = false, onChange }) => {
                 </div>
             </div>
 
-            {/* Description */}
-
-
-            <div className='d-flex justify-content-end'>
-
+            {/* Suwak */}
+            <div className="d-flex justify-content-end">
                 <input
                     type="range"
-                    min="1"
+                    min="0"
                     max="3"
                     step="1"
                     value={value}
                     onChange={handleChange}
                     className="form-range"
-                    
                 />
             </div>
         </div>
